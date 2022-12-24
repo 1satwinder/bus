@@ -1,18 +1,76 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <b-container class="bv-example-row pt-2">
+    <b-row class="mb-2 list-header">
+      <b-col
+        >Owned By God, Operated By EXECUIVE MINIBUS SERVICE Since 2006</b-col
+      >
+      <b-col class="attachRight list-header"
+        >WE SPECIALIZE IN SMALL GROUPS TRANSPORTATION</b-col
+      >
+    </b-row>
+    <b-row class="mb-5">
+      <b-col md="4" xs="12" class="services-list" order-xs="2" order-md="0">
+        <b-card class="list-header list-card" no-body header="OUR SERVICES">
+          <b-list-group flush>
+            <b-list-group-item variant="primary" href="#"
+              >TOURS AND CHARTERS</b-list-group-item
+            >
+            <b-list-group-item variant="primary" href="#"
+              >SHUTTLE SERVICE</b-list-group-item
+            >
+            <b-list-group-item variant="primary" href="#"
+              >AIRPORT TRANSFERS</b-list-group-item
+            >
+            <b-list-group-item variant="primary" href="#"
+              >TORONTO SIGHT SEEING</b-list-group-item
+            >
+            <b-list-group-item variant="primary" href="#"
+              >AIRPORT TRANSFERS</b-list-group-item
+            >
+            <b-list-group-item variant="primary" href="#"
+              >AIRPORT TRANSFERS</b-list-group-item
+            >
+          </b-list-group>
+        </b-card>
+      </b-col>
+      <b-col md="8" order-xs="1">
+        <Carousel />
+      </b-col>
+    </b-row>
+    <CardDeck />
+  </b-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Carousel from "../components/Carousel.vue";
+import CardDeck from "../components/CardDeck.vue";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
+    Carousel,
+    CardDeck,
+  },
+};
+</script>
+
+<style scoped>
+img {
+  width: 100%;
+}
+.attachRight {
+  text-align: right;
+}
+.list-header {
+  color: red;
+  font-weight: bolder;
+}
+.bv-example-row {
+  padding-right: 0px;
+  padding-left: 6px;
+}
+@media only screen and (max-width: 600px) {
+  .list-card {
+    text-align: center;
   }
 }
-</script>
+</style>

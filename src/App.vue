@@ -1,32 +1,79 @@
 <template>
-  <div id="app">
+  <div class="container">
+    <img
+      src="./assets/homeImage.jpg"
+      class="top-image"
+      fluid
+      alt="Responsive image"
+    />
+    <hr class="separater" />
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <b-navbar toggleable="lg" class="navbarclass" type="dark" variant="info">
+        <b-navbar-brand href="#">Executive Minibus Services </b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav class="ml-auto">
+            <b-nav-item>
+              <router-link to="/">
+                <b-button variant="light">HOME</b-button>
+              </router-link></b-nav-item
+            >
+            <b-nav-item>
+              <router-link to="/aboutus">
+                <b-button variant="light">ABOUT US</b-button>
+              </router-link></b-nav-item
+            >
+            <b-nav-item>
+              <router-link to="/services">
+                <b-button variant="light">SERVICES</b-button>
+              </router-link></b-nav-item
+            >
+            <b-nav-item>
+              <router-link to="/clients">
+                <b-button variant="light">CLIENTS</b-button>
+              </router-link></b-nav-item
+            >
+            <b-nav-item>
+              <router-link to="/contactus">
+                <b-button variant="light">CONTACT US</b-button>
+              </router-link></b-nav-item
+            >
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </div>
-    <router-view/>
+    <router-view />
+    <Footer class="mb-5"></Footer>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import Footer from "./components/Footer.vue";
+export default {
+  name: "App",
+  components: { Footer },
+};
+</script>
+
+<style scoped>
+* {
+  font-family: "Times New Roman";
+}
+img {
+  width: 100%;
+  height: 120px;
+}
+.navbarclass {
+  background-color: #00345b !important;
 }
 
-#nav {
-  padding: 30px;
+.separater {
+  margin: 0.5px;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  background: #F1F6F5;
 }
 </style>
+
