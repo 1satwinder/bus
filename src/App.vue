@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img
-      src="./assets/homeImage.jpg"
+      src="./assets/homeImagenew.jpg"
       class="top-image"
       fluid
       alt="Responsive image"

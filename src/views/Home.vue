@@ -1,13 +1,5 @@
 <template>
   <b-container class="bv-example-row pt-2">
-    <b-row class="mb-2 list-header">
-      <b-col
-        >Owned By God, Operated By EXECUIVE MINIBUS SERVICE Since 2006</b-col
-      >
-      <b-col class="attachRight list-header"
-        >WE SPECIALIZE IN SMALL GROUPS TRANSPORTATION</b-col
-      >
-    </b-row>
     <b-row class="mb-5">
       <b-col md="4" xs="12" class="services-list" order-xs="2" order-md="0">
         <b-card class="list-header list-card" no-body header="OUR SERVICES">
@@ -25,11 +17,11 @@
               >TORONTO SIGHT SEEING</b-list-group-item
             >
             <b-list-group-item variant="primary" href="#"
-              >AIRPORT TRANSFERS</b-list-group-item
+              >NIAGARA FALLS SIGHTSEEING</b-list-group-item
             >
             <b-list-group-item variant="primary" href="#"
-              >AIRPORT TRANSFERS</b-list-group-item
-            >
+              >LIMOUSINE SERVICE
+            </b-list-group-item>
           </b-list-group>
         </b-card>
       </b-col>

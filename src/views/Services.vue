@@ -4,7 +4,7 @@
       <b-card title="Tours and Charters" img-top>
         <img
           class="card-img img-fluid"
-          src="../assets/carouselImages/img4.jpg"
+          src="../assets/carouselImages/car1.jpg"
         />
 
         <b-card-text class="mt-2">
@@ -18,7 +18,7 @@
       <b-card title="Shuttle Service" img-top>
         <img
           class="card-img img-fluid"
-          src="../assets/carouselImages/img1.jpg"
+          src="../assets/carouselImages/car2.jpg"
         />
 
         <b-card-text class="mt-2">
@@ -114,20 +114,6 @@
         <b-card-text class="mt-2">
           There are over hundred of wineries in Ontario and more than 50% of
           them are located in the Niagara Falls region.
-        </b-card-text>
-      </b-card>
-      <b-card title="Ontario Black Heritage Tours" img-top>
-        <img
-          class="card-img img-fluid"
-          src="../assets/carouselImages/img4.jpg"
-        />
-
-        <b-card-text class="mt-2">
-          Canadians with African decent have been in this country for over 150
-          years. Our private tours take you to some of their early settlements.
-          We will show you some of their Escape Routes from slavery and poverty
-          in the United States of America to their freedom in Canada via the
-          Underground Railroad and etc
         </b-card-text>
       </b-card>
     </b-card-group>

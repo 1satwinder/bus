@@ -262,7 +262,7 @@ export default {
         "Hourly Charter",
         "Pick up and drop off only",
       ],
-      sizes: [{ text: "Select One", value: null }, "14", "11", "7", "Pax"],
+      sizes: [{ text: "Select One", value: null }, "14 Pax", "11 Pax", "7 Pax"],
     };
   },
   methods: {
