@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
+    <form
+      name="service-request-form"
+      method="POST"
+      netlify
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      netlify-honeypot="bot-field"
+      style="display: none;"
+    >
+      <input type="hidden" name="form-name" value="service-request-form" />
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="number" name="telephone" />
+      <input type="number" name="fax"/>
+      <input type="text" name="email"/>
+      <select name="selectedService"></select>
+      <input type="radio" name="isPrepareQuote"/>
+      <select name="selectedSize"></select>
+      <input type="text" name="numOfPeople"/>
+      <input type="radio" name="selectedMeet"/>
+      <input type="radio" name="selectedCoordinator" />
+      <input type="radio" name="specialNeeds"/>
+      <input type="text" name="hours"/>
+      <input type="text" name="location"/>
+      <input type="text" name="city"/>
+      <input type="text" name="depDate"/>
+      <input type="text" name="depTime"/>
+      <input type="text" name="destinationAddress"/>
+      <input type="text" name="RetDate"/>
+      <input type="text" name="RetTime"/>
+      <input type="text" name="comments"/>
+    </form>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

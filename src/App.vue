@@ -1,11 +1,6 @@
 <template>
   <div class="container">
-    <img
-      src="./assets/homeImagenew.jpg"
-      class="top-image"
-      fluid
-      alt="Responsive image"
-    />
+   <Header/>
     <hr class="separater" />
     <div id="nav">
       <b-navbar toggleable="lg" class="navbarclass" type="dark" variant="info">
@@ -51,9 +46,10 @@
 
 <script>
 import Footer from "./components/Footer.vue";
+import Header from "./components/Header.vue"
 export default {
   name: "App",
-  components: { Footer },
+  components: { Footer, Header },
 };
 </script>
 

@@ -5,6 +5,9 @@ import Contact from "../views/Contact.vue";
 import Services from "../views/Services.vue";
 import About from "../views/About.vue";
 import Clients from "../views/Clients.vue";
+import SubmissionSuccess from '../components/SubmissionSuccess'
+import SubmissionFail from '../components/SubmissionFail'
+
 
 Vue.use(VueRouter);
 
@@ -33,6 +36,16 @@ const routes = [
     path: "/Clients",
     name: 'Client',
     component: Clients
+  },
+  {
+    path: '/thanks',
+    name: 'success',
+    component: SubmissionSuccess
+  },
+  {
+    path: '/404',
+    name: 'fail',
+    component: SubmissionFail
   }
 ];
 

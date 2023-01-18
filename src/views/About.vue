@@ -3,7 +3,7 @@
     <div class="about mt-3">
       <h3 class="about-header">OUR STORY</h3>
 
-      <p>
+      <p class="my-story">
         This is the dream of one bus driver who found the need for a special and
         unique way for small groups of people to travel in comfort and in
         privacy in a public vehicle. That is when CANADIAN LUXURY MINIVAN
@@ -12,8 +12,9 @@
         passengers only.
       </p>
 
-      <h5>All our drivers are professionally trained in: Customer Relations</h5>
-      <ul>
+      <h5 class="my-story">All our drivers are professionally trained in:</h5>
+      <ul class="my-story">
+        <li>Customer Relations</li>
         <li>Defensive Driving</li>
         <li>First Aid</li>
         <li>C.P.R</li>
@@ -30,6 +31,10 @@ export default {};
 .about-header {
   color: red;
   font-weight: bold;
+  font-size: 30px;
+}
+.my-story {
+  font-size: 18px;
 }
 </style>
 

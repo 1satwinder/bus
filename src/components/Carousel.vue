@@ -19,7 +19,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car1.jpg"
             alt="image slot"
           />
@@ -31,7 +31,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car2.jpg"
             alt="image slot"
           />
@@ -42,7 +42,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car3.jpg"
             alt="image slot"
           />
@@ -53,7 +53,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car4.jpg"
             alt="image slot"
           />
@@ -64,7 +64,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car5.jpg"
             alt="image slot"
           />
@@ -75,7 +75,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car6.jpg"
             alt="image slot"
           />
@@ -84,9 +84,9 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
+            class="d-block w-100 strech-image"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car7.jpg"
             alt="image slot"
           />
@@ -97,7 +97,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car8.jpg"
             alt="image slot"
           />
@@ -108,7 +108,7 @@
           <img
             class="d-block w-100"
             width="1024"
-            height="350"
+            height="395"
             src="../assets/carouselImages/car9.jpg"
             alt="image slot"
           />
@@ -137,3 +137,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

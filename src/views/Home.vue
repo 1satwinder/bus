@@ -22,6 +22,9 @@
             <b-list-group-item variant="primary" href="#"
               >LIMOUSINE SERVICE
             </b-list-group-item>
+            <b-list-group-item variant="primary" href="#"
+              >WINERY TOURS
+            </b-list-group-item>
           </b-list-group>
         </b-card>
       </b-col>
