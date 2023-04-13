@@ -3,7 +3,7 @@
     <b-carousel
       id="carousel-1"
       v-model="slide"
-      :interval="5000"
+      :interval="0"
       controls
       indicators
       background="#ababab"
@@ -17,7 +17,7 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
+            class="d-block w-100 carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car1.jpg"
@@ -29,7 +29,7 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
+            class="d-block w-100 carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car2.jpg"
@@ -40,18 +40,7 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
-            width="1024"
-            height="395"
-            src="../assets/carouselImages/car3.jpg"
-            alt="image slot"
-          />
-        </template>
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <template #img>
-          <img
-            class="d-block w-100"
+            class="d-block w-100 carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car4.jpg"
@@ -62,7 +51,7 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
+            class="d-block w-100 carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car5.jpg"
@@ -70,7 +59,7 @@
           />
         </template>
       </b-carousel-slide>
-      <b-carousel-slide>
+      <!-- <b-carousel-slide>
         <template #img>
           <img
             class="d-block w-100"
@@ -80,11 +69,11 @@
             alt="image slot"
           />
         </template>
-      </b-carousel-slide>
+      </b-carousel-slide> -->
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100 strech-image"
+            class="d-block w-100 strech-image carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car7.jpg"
@@ -95,7 +84,7 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
+            class="d-block w-100 carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car8.jpg"
@@ -106,7 +95,7 @@
       <b-carousel-slide>
         <template #img>
           <img
-            class="d-block w-100"
+            class="d-block w-100 carousel-img"
             width="1024"
             height="395"
             src="../assets/carouselImages/car9.jpg"
@@ -139,4 +128,11 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-width: 600px) {
+  .carousel-img {
+    object-fit: fill;
+    height: 280px;
+    width: 100%;
+  }
+}
 </style>
